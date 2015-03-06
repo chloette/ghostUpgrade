@@ -3,13 +3,13 @@ script to upgrade ghost
 
 ---
 
-Environment before using:
+####Environment before using:
 
 1. Ubuntu 14.04 (or similar)
 2. ghost0.5.x
 3. npm/nodejs/forever
 
-How to use:
+####How to use:
 
 1. Clone to `folder-of-code`
 2. change `folder-of-ghost` in `start_ghost.sh` to actual ghost folder 
@@ -19,11 +19,11 @@ otherwise:
 `sudo folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code`
 4. Just waiting~ LOL~
 
-Enjoy your latest ghost~
+Enjoy your ghost~
 
 ---
 
-What's `upgrade_ghost.sh`：
+####What's `upgrade_ghost.sh`：
 
 step1: stop ghost
 
@@ -40,6 +40,8 @@ step9: [use prism to highlight syntax](http://nobodycare.me/2015/03/04/ghost-hig
 step10: add disqus comment（[how-to@disqus.com](https://help.disqus.com/customer/portal/articles/1454924-ghost-installation-instructions),[how-to@ghost.org](http://support.ghost.org/add-disqus-to-my-ghost-blog/)）
 
 step11: restart ghost
+
+---
 
 That's all~
 
