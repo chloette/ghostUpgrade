@@ -11,19 +11,20 @@ script to upgrade ghost
 
 ####How to use:
 
-1. Clone to `folder-of-code`
-2. change `folder-of-ghost` in `start_ghost.sh` to actual ghost folder 
-3. If you need comments (Disqus only), upgrade like this:
-`sudo folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code Disqus_forum_shortname`,
+1. clone to `folder-of-code`
+2. add executable permission to `upgrade_ghost.sh` and `start_ghost.sh` like this: `chmod a+x folder-of-code/*.sh` 
+3. change `folder-of-ghost` in `start_ghost.sh` to actual ghost folder 
+4. If you need comments (Disqus only), upgrade like this:
+`folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code Disqus_forum_shortname`,
 otherwise:
-`sudo folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code`
-4. Just waiting~ LOL~
+`folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code`
+5. Waiting...
 
-Enjoy your ghost~
+LOL~ Enjoy your ghost~
 
 ---
 
-####What's `upgrade_ghost.sh`：
+####What's `upgrade_ghost.sh` doing：
 
 step1: stop ghost
 
