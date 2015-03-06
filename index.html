@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ghostupgrade by chloette</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ghostupgrade</h1>
+        <p>script to upgrade ghost</p>
+
+        <p class="view"><a href="https://github.com/chloette/ghostUpgrade">View the Project on GitHub <small>chloette/ghostUpgrade</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/chloette/ghostUpgrade/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/chloette/ghostUpgrade/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chloette/ghostUpgrade">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ghostupgrade" class="anchor" href="#ghostupgrade" aria-hidden="true"><span class="octicon octicon-link"></span></a>ghostUpgrade</h1>
+
+<p>script to upgrade ghost</p>
+
+<hr>
+
+<p>Environment before using:</p>
+
+<ol>
+<li>Ubuntu 14.04 (or similar)</li>
+<li>ghost0.5.x</li>
+<li>npm/nodejs/forever</li>
+</ol>
+
+<p>How to use:</p>
+
+<ol>
+<li>Clone to home folder</li>
+<li>change <code>folder-of-ghost</code> in <code>start_ghost.sh</code> to actual ghost folder </li>
+<li>If you need comments (Disqus only), upgrade like this:
+<code>sudo ~/upgrade_ghost.sh ghost_folder Disqus_forum_shortname</code>,
+otherwise:
+<code>sudo ~/upgrade_ghost.sh ghost_folder</code>
+</li>
+<li>Just waiting~ LOL~</li>
+</ol>
+
+<p>Enjoy your latest ghost~</p>
+
+<hr>
+
+<p>What's <code>upgrade_ghost.sh</code>：</p>
+
+<p>step1: stop ghost</p>
+
+<p>step2-5: download latest ghost and install（<a href="http://support.ghost.org/how-to-upgrade">how-to@ghost.org</a>）</p>
+
+<p>step6: <strong>（If you're out of China, please ignore/comment this step.）</strong> 针对国内google fonts被墙，导致<a href="http://nobodycare.me/2014/09/16/ghost-slower-than-wordpress/">访问性能极差</a>做的优化（使用360的cdn）。 </p>
+
+<p>step7: <a href="http://nobodycare.me/2014/09/22/ghost-display-post-images-on-home-page/">show content rather than excerpt @index</a></p>
+
+<p>step8: <a href="http://nobodycare.me/2014/09/30/optimize-layout-of-ghost-logo/">make logo looks better</a>，and <a href="http://nobodycare.me/2015/01/06/ghost-limit-image-width/">limit index image width</a></p>
+
+<p>step9: <a href="http://nobodycare.me/2015/03/04/ghost-highlight-syntax/">use prism to highlight syntax</a></p>
+
+<p>step10: add disqus comment（<a href="https://help.disqus.com/customer/portal/articles/1454924-ghost-installation-instructions">how-to@disqus.com</a>）</p>
+
+<p>step11: restart ghost</p>
+
+<p>That's all~</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/chloette">chloette</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
