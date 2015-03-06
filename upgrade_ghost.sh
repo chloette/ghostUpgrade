@@ -44,26 +44,26 @@ echo '8. change logo position and limit index image layout ----------------'
 sed -i 's~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}~~g' ./content/themes/casper/index.hbs 
 sed -i 's~<h1 class="page-title">{{@blog.title}}</h1>~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}/about"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}<h1 class="page-title">{{@blog.title}}</h1>~g' ./content/themes/casper/index.hbs 
 #call python to do multiple lines replacement
-python ~/ghost_css_adjustment.py
+python $2/ghost_css_adjustment.py
 
 #copy prism js/css to content and use it (to highlight codes)
 echo '9. use prism to highlight code'
-cp ~/prism/prism.js ./content/themes/casper/assets/js/
-cp ~/prism/prism.css ./content/themes/casper/assets/css/
+cp $2/prism/prism.js ./content/themes/casper/assets/js/
+cp $2/prism/prism.css ./content/themes/casper/assets/css/
 sed -i 's~<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />~<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" /><link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />~g' ./content/themes/casper/default.hbs
 sed -i 's~<script type="text/javascript" src="{{asset "js/index.js"}}"></script>~<script type="text/javascript" src="{{asset "js/index.js"}}"></script><script type="text/javascript" src="{{asset "js/prism.js"}}"></script>~g' ./content/themes/casper/default.hbs
 
 #try to add comments
-if [ -z "$2" ] ; then
+if [ -z "$3" ] ; then
   echo "10. no comments."
 else
   echo '10. add comments'
-  python ~/ghost_add_comments.py $2
+  python $2/ghost_add_comments.py $2 $3
 fi
 
 #restart
 echo '11. restart ---------------'
-~/start_ghost.sh
+$2/start_ghost.sh
 
 echo ' ------------ All done. --------------'
 

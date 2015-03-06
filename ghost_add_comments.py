@@ -15,10 +15,11 @@ def replace_string_in_file(filename, origin, target):
 	outfile.close()
    	return
 
-disqusName=sys.argv[1]
+folderName=sys.argv[1]
+disqusName=sys.argv[2]
 
-comment='~/disqus/disqus_comment'
-commentcount='~/disqus/disqus_comment_count'
+comment=folderName+'/disqus/disqus_comment'
+commentcount=folderName+'/disqus/disqus_comment_count'
 
 inComment=open(comment, 'r')
 inCommentCount=open(commentcount, 'r')
