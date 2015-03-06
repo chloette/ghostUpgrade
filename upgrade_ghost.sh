@@ -40,7 +40,7 @@ echo '7. replace "excerpt" with "content" ---------------'
 sed -i "s#<p>{{excerpt words=\"26\"}} <a class=\"read-more\" href=\"{{url}}\">&raquo;#<p>{{content words=\"32\"}} <a class=\"read-more\" href=\"{{url}}\">\&raquo;\&raquo;#g" ./content/themes/casper/partials/loop.hbs
 
 #change logo position
-echo '8. change logo position ----------------'
+echo '8. change logo position and limit index image layout ----------------'
 sed -i 's~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}~~g' ./content/themes/casper/index.hbs 
 sed -i 's~<h1 class="page-title">{{@blog.title}}</h1>~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}/about"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}<h1 class="page-title">{{@blog.title}}</h1>~g' ./content/themes/casper/index.hbs 
 #call python to do multiple lines replacement
