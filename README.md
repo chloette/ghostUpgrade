@@ -11,12 +11,12 @@ Environment before using:
 
 How to use:
 
-1. Clone to home folder
+1. Clone to `folder-of-code`
 2. change `folder-of-ghost` in `start_ghost.sh` to actual ghost folder 
 3. If you need comments (Disqus only), upgrade like this:
-`sudo ~/upgrade_ghost.sh ghost_folder Disqus_forum_shortname`,
+`sudo folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code Disqus_forum_shortname`,
 otherwise:
-`sudo ~/upgrade_ghost.sh ghost_folder`
+`sudo folder-of-code/upgrade_ghost.sh folder-of-ghost folder-of-code`
 4. Just waiting~ LOL~
 
 Enjoy your latest ghost~
