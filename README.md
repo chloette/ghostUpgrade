@@ -37,7 +37,7 @@ step8: [make logo looks better](http://nobodycare.me/2014/09/30/optimize-layout-
 
 step9: [use prism to highlight syntax](http://nobodycare.me/2015/03/04/ghost-highlight-syntax/)
 
-step10: add disqus comment（[how-to@disqus.com](https://help.disqus.com/customer/portal/articles/1454924-ghost-installation-instructions)）
+step10: add disqus comment（[how-to@disqus.com](https://help.disqus.com/customer/portal/articles/1454924-ghost-installation-instructions),[how-to@ghost.org](http://support.ghost.org/add-disqus-to-my-ghost-blog/)）
 
 step11: restart ghost
 
