@@ -41,8 +41,8 @@ sed -i "s#<p>{{excerpt words=\"26\"}} <a class=\"read-more\" href=\"{{url}}\">&r
 
 #change logo position
 echo '8. change logo position and limit index image layout ----------------'
-sed -i 's~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}~~g' ./content/themes/casper/index.hbs 
-sed -i 's~<h1 class="page-title">{{@blog.title}}</h1>~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}/about"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}<h1 class="page-title">{{@blog.title}}</h1>~g' ./content/themes/casper/index.hbs 
+sed -i 's~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}~~g' ./content/themes/casper/index.hbs 
+sed -i 's~<h1 class="page-title">{{@blog.title}}</h1>~{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}/about"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}<h1 class="page-title">{{@blog.title}}</h1>~g' ./content/themes/casper/index.hbs 
 #call python to do multiple lines replacement
 python $2/ghost_css_adjustment.py
 
